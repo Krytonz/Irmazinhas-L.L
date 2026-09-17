@@ -8,17 +8,17 @@
 }
 
 :root {
-    --primary-color: #ff4757;
-    --secondary-color: #2ed573;
-    --dark-bg: #1e1e2e;
-    --darker-bg: #151521;
+    --primary-color: #dc143c;
+    --secondary-color: #ff1744;
+    --dark-bg: #0a0a0a;
+    --darker-bg: #000000;
     --text-primary: #ffffff;
-    --text-secondary: #a0a0b0;
-    --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --card-bg: #252535;
+    --text-secondary: #c0c0c0;
+    --accent-gradient: linear-gradient(135deg, #dc143c 0%, #8b0000 100%);
+    --card-bg: #1a0000;
     --border-radius: 16px;
-    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 20px 60px rgba(220, 20, 60, 0.5);
+    --shadow-md: 0 10px 30px rgba(220, 20, 60, 0.3);
 }
 
 body {
@@ -48,7 +48,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #1a0000 0%, #dc143c 50%, #000000 100%);
     overflow: hidden;
 }
 
@@ -60,8 +60,8 @@ section {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(255, 71, 87, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(46, 213, 115, 0.3) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(220, 20, 60, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 0, 0, 0.4) 0%, transparent 50%);
     animation: pulse-bg 8s ease-in-out infinite;
 }
 
@@ -76,7 +76,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
 }
 
@@ -116,7 +116,7 @@ section {
 }
 
 .highlight {
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    background: linear-gradient(135deg, #ff1744 0%, #dc143c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -152,14 +152,14 @@ section {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #ff4757 0%, #ff6348 100%);
+    background: linear-gradient(135deg, #dc143c 0%, #8b0000 100%);
     color: white;
-    box-shadow: 0 10px 40px rgba(255, 71, 87, 0.4);
+    box-shadow: 0 10px 40px rgba(220, 20, 60, 0.6);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 50px rgba(255, 71, 87, 0.6);
+    box-shadow: 0 15px 50px rgba(220, 20, 60, 0.8);
 }
 
 .btn-secondary {
@@ -208,7 +208,7 @@ section {
     font-size: 2.5rem;
     font-weight: 800;
     font-family: 'Sora', sans-serif;
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    background: linear-gradient(135deg, #ff1744 0%, #dc143c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -279,13 +279,13 @@ section {
 .benefit-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(102, 126, 234, 0.3);
+    border-color: rgba(220, 20, 60, 0.5);
 }
 
 .benefit-icon {
     font-size: 3rem;
     margin-bottom: 20px;
-    filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.3));
+    filter: drop-shadow(0 4px 8px rgba(220, 20, 60, 0.5));
 }
 
 .benefit-card h3 {
@@ -434,8 +434,8 @@ section {
 }
 
 .guarantee-box {
-    background: linear-gradient(135deg, rgba(46, 213, 115, 0.1) 0%, rgba(46, 213, 115, 0.05) 100%);
-    border: 2px solid rgba(46, 213, 115, 0.3);
+    background: linear-gradient(135deg, rgba(220, 20, 60, 0.15) 0%, rgba(139, 0, 0, 0.1) 100%);
+    border: 2px solid rgba(220, 20, 60, 0.4);
     border-radius: var(--border-radius);
     padding: 48px;
     max-width: 800px;
@@ -491,8 +491,8 @@ section {
 }
 
 .pricing-card.featured {
-    border-color: rgba(102, 126, 234, 0.5);
-    box-shadow: 0 0 40px rgba(102, 126, 234, 0.2);
+    border-color: rgba(220, 20, 60, 0.7);
+    box-shadow: 0 0 40px rgba(220, 20, 60, 0.4);
     transform: scale(1.05);
 }
 
